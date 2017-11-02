@@ -1,0 +1,17 @@
+[
+    {
+        title: 'Basic',
+        panel: 'OChart.example.Simple',
+        leaf: true
+    },
+    {
+        title: 'Custom Item Template',
+        panel: 'OChart.example.CustomTemplate',
+        leaf: true
+    },
+    {
+        title: 'Shared Store',
+        panel: 'OChart.example.SharedStore',
+        leaf: true
+    }
+]

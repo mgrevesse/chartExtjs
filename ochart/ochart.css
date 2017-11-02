@@ -1,0 +1,177 @@
+.x-ochart * {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    -ms-box-sizing: content-box !important;
+    -webkit-box-sizing: content-box !important;
+    -moz-background-clip: border;
+    -moz-background-inline-policy: continuous;
+    -moz-background-origin: padding;
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: repeat-y;
+    background-image: none;  /* no v-lines */
+    border-spacing: 0px !important;
+    border-collapse: collapse !important;
+}
+
+.x-ochart {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.x-ochart-wrap {
+    white-space: nowrap;
+    padding-top: 2px;
+    border-spacing: 0  !important;
+    border-collapse: collapse !important;
+    margin: 20px;
+}
+
+.x-ochart-node{
+    vertical-align: top !important;
+}
+
+.x-ochart-expander-row{
+    display: none !important;
+    text-align: center !important;
+}
+
+.x-ochart-expander{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-top: -2px !important;
+    margin-left: 4px;
+    background: url("images/ochart-tree.png") center no-repeat;
+    cursor: pointer !important;
+}
+
+.x-ochart-add{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-top: -2px;
+    margin-left: 2px;
+    background: url("images/ochart-add.png") center no-repeat;
+    cursor: pointer !important;
+}
+
+.x-ochart-remove{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-top: -2px;
+    margin-left: 4px;
+    background: url("images/ochart-remove.png") center no-repeat;
+    cursor: pointer !important;
+}
+
+.x-ochart-node.x-item-collapsed > table > tbody > .x-ochart-lines.x-ochart-children-lines, .x-ochart-node.x-item-collapsed > table > tbody > .x-ochart-container{
+    display: none !important;
+}
+
+.x-ochart-node.x-item-collapsed > table > tbody > .x-ochart-expander-row{
+    display: table-row !important;
+}
+
+/* node cell */
+.x-ochart-node-row {
+    vertical-align: top;
+    padding: 0;
+}
+
+.x-ochart-node-row > td {
+    text-align: center;
+}
+
+.x-ochart-node-content {
+    border: 1px solid black;
+    display: inline-block !important;
+    padding: 4px;
+    margin-top: -3px !important;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    cursor: pointer;
+    min-width: 48px;
+}
+
+.x-ochart-container {
+    vertical-align: top !important;
+}
+
+.x-ochart-left{
+    width: 50% !important;
+    display: inline-block !important;
+    border-style: solid;
+    border-width: 0;
+    margin-top: -2px;
+}
+
+.x-ochart-right{
+    width: 50% !important;
+    display: inline-block !important;
+    border-style: solid;
+    border-width: 0;
+    margin-top: -2px;
+}
+
+.x-ochart-lines.x-ochart-down .x-ochart-left, .x-ochart-lines.x-ochart-down .x-ochart-right{
+    border-top: 0;
+    margin-top: 0px;
+    margin-bottom: -1px;
+}
+
+.x-ochart-lines > .x-ochart-first > .x-ochart-left{
+    border: 0;
+}
+
+.x-ochart-lines > .x-ochart-first > .x-ochart-right{
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+.x-ochart-lines > .x-ochart-last > .x-ochart-right{
+    border: 0;
+}
+
+.x-ochart-lines > .x-ochart-last > .x-ochart-left{
+    border-right: 2px solid black;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+
+.x-ochart-node .x-item-selected{
+    background-color: #b0eeff;
+}
+
+.x-ochart-ddindicator{
+    width: 16px;
+    height: 16px;
+    background: transparent url(images/ochart-arrows.png) no-repeat;
+}
+
+.x-ochart-ddindicator.before{
+    background-position: -48px center;
+}
+
+.x-ochart-ddindicator.after{
+    background-position: -16px center;
+}
+
+.x-ochart-ddindicator.append{
+    background-position: -32px center;
+}
+
+.x-ochart-over-node{
+    background-color: #ffedb3;
+    border-color: red !important;
+}
